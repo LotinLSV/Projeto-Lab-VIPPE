@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meu App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="manifest" href="{{ url_for('static', filename='manifest.json') }}">
+    
+</head>
+<body>
+    <script>
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/static/sw.js');
+}
+</script>
+
+
+    <!-- <h1>Rodando com Flask + PyWebView 🚀</h1>
+    <button onclick="alert('Funcionando!')">Clique</button>
+    <button onclick="window.location.href='/p2'">ir para a segunda página</button> -->
+    <div id="envelope">
+    <div id="containerformulario">
+
+    <form action="/logar" method="POST">
+        <h3 id="titulo">VIPPE +</h3>
+        <label for="usuario" id="user">Login</label><br>
+        <input type="text" name="usuario" id="usertxt"><br><br>
+        <label for="senha" id="password">Senha</label><br>
+        <input type="password" name="senha" id="passwordtxt"><br>
+        <button type="submit">Entrar</button>   
+        <a href="#">Esqueceu sua senha?</a>
+    </form>
+    </div>
+    </div>
+</body>
+</html>

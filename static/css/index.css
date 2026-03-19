@@ -1,0 +1,23 @@
+#containerformulario{
+    border: 1px solid black;
+    padding: 3%;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
+    
+ 
+}
+
+#envelope {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#titulo {
+    font-size: 2em;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}

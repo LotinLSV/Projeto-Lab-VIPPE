@@ -6,6 +6,12 @@
     <title>Document</title>
 </head>
 <body>
+
+{% extends 'base.html' %}
+{% block content %}
+<h1>Agente IA</h1>
+{% endblock %}
+    
  <button onclick="window.pywebview.api.abrir_n8n()">
     Abrir N8N
 </button>
